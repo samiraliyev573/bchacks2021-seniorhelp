@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'quiz.dart';
+import 'screens/home_page.dart';
+import 'screens/quiz.dart';
+import 'screens/talk_page.dart';
 import 'package:firebase_core/firebase_core.dart';
 
 void main() async {
@@ -17,7 +19,9 @@ class MyApp extends StatelessWidget {
         ),
         initialRoute: '/',
         routes: {
-          '/': (context) => Quiz(),
+          '/': (context) => HomePage(),
+          '/talk': (context) => TalkPage(),
+          '/quiz': (context) => Quiz(),
         });
   }
 }
