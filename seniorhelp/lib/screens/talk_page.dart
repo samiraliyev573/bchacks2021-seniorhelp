@@ -47,18 +47,26 @@ class _TalkPageState extends State<TalkPage> {
         ),
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
-      floatingActionButton: AvatarGlow(
-        animate: voiceListen,
-        glowColor: Theme.of(context).primaryColor,
-        endRadius: 85.0,
-        duration: Duration(milliseconds: 2000),
-        repeatPauseDuration: Duration(milliseconds: 100),
-        repeat: true,
-        child: FloatingActionButton(
-          onPressed: _listen,
-          child: Icon(voiceListen ? Icons.mic : Icons.mic_none),
+      bottomSheet: Padding(padding: EdgeInsets.only(bottom: 30.0)),
+      floatingActionButton:AvatarGlow(
+          animate: voiceListen,
+          glowColor: Theme.of(context).primaryColor,
+          endRadius: 35.0,
+          duration: Duration(milliseconds: 2000),
+          repeatPauseDuration: Duration(milliseconds: 100),
+          repeat: true,
+          child: Material(
+            elevation: 10.0,
+            shape: CircleBorder(),
+            child: CircleAvatar(
+              child: Icon(
+                voiceListen ? Icons.mic : Icons.mic_none,
+                size: 50,
+              ),
+              radius: 110.0,
+            ),
+          ),
         ),
-      ),
       body: Container(
         child: Column(
           children: <Widget>[
@@ -70,7 +78,7 @@ class _TalkPageState extends State<TalkPage> {
                         messageList[index]["message"].toString(),
                         messageList[index]["data"]))),
             SizedBox(
-              height: 130,
+              height: 100,
             ),
           ],
         ),
