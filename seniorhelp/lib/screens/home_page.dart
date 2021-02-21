@@ -15,7 +15,7 @@ class _HomePageState extends State<HomePage>
   List<DocumentSnapshot> todolist;
   StreamSubscription<QuerySnapshot> todolistsubscription;
   final CollectionReference collectionReference =
-  FirebaseFirestore.instance.collection('todos');
+      FirebaseFirestore.instance.collection('todos');
   @override
   void initState() {
     super.initState();
@@ -32,17 +32,13 @@ class _HomePageState extends State<HomePage>
       dialogType: DialogType.WARNING,
       animType: AnimType.SCALE,
       title: 'Emergency Call',
-      body:Container(
+      body: Container(
         height: 40,
         child: Center(
-            child:
-            Text(
-              'Son',
-              style: TextStyle(
-                  fontSize: 35
-              ),
-            )
-        ),
+            child: Text(
+          'Son',
+          style: TextStyle(fontSize: 35),
+        )),
       ),
       btnOkText: "Call",
       btnCancelOnPress: () {
@@ -51,7 +47,6 @@ class _HomePageState extends State<HomePage>
       btnOkOnPress: () {},
     )..show();
   }
-
 
   @override
   void dispose() {
@@ -90,9 +85,9 @@ class _HomePageState extends State<HomePage>
       ),
       body: Column(
         children: [
-          SizedBox(height:20),
+          SizedBox(height: 20),
           Text(
-              "To Do:",
+            "To Do:",
             style: TextStyle(
               fontSize: 35,
               color: Colors.white,
@@ -100,43 +95,43 @@ class _HomePageState extends State<HomePage>
           ),
           todolist != null
               ? Expanded(
-              child: ListView.builder(
-                  scrollDirection: Axis.vertical,
-                  shrinkWrap: true,
-                  padding: EdgeInsets.all(8),
-                  itemCount: todolist.length,
-                  itemBuilder: (context, index) {
-                    String todoName = todolist[index].data()['name'];
-                    String todoDate = todolist[index].data()['date'];
-                    return Dismissible(
-                      key: Key(todolist[index].id),
-                      child: Card(
-                        shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(10)),
-                        child: ListTile(
-                          title: Text(todoName),
-                          subtitle: Text(todoDate),
-                          trailing: IconButton(
-                            onPressed: () {
-                              updateTask(todolist[index].id);
-                            },
-                            icon: todolist[index].data()['isChecked']
-                                ? Icon(
-                              Icons.done,
-                              color: Colors.greenAccent,
-                            )
-                                : Icon(Icons.done),
+                  child: ListView.builder(
+                      scrollDirection: Axis.vertical,
+                      shrinkWrap: true,
+                      padding: EdgeInsets.all(8),
+                      itemCount: todolist.length,
+                      itemBuilder: (context, index) {
+                        String todoName = todolist[index].data()['name'];
+                        String todoDate = todolist[index].data()['date'];
+                        return Dismissible(
+                          key: Key(todolist[index].id),
+                          child: Card(
+                            shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(10)),
+                            child: ListTile(
+                              title: Text(todoName),
+                              subtitle: Text(todoDate),
+                              trailing: IconButton(
+                                onPressed: () {
+                                  updateTask(todolist[index].id);
+                                },
+                                icon: todolist[index].data()['isChecked']
+                                    ? Icon(
+                                        Icons.done,
+                                        color: Colors.greenAccent,
+                                      )
+                                    : Icon(Icons.done),
+                              ),
+                            ),
                           ),
-                        ),
-                      ),
-                    );
-                  }))
+                        );
+                      }))
               : Expanded(
-              child: Container(
-                child: Center(
-                  child: Text("Loading Your Todo List"),
-                ),
-              )),
+                  child: Container(
+                  child: Center(
+                    child: Text("Loading Your Todo List"),
+                  ),
+                )),
           Row(
             children: [
               SizedBox(width: 10),
@@ -193,7 +188,7 @@ class _HomePageState extends State<HomePage>
             children: [
               SizedBox(width: 10),
               GestureDetector(
-                onTap: (){
+                onTap: () {
                   showOptions(context);
                 },
                 child: Container(
