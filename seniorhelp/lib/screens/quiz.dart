@@ -3,6 +3,7 @@ import 'dart:async';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:seniorhelp/model/question.dart';
+import 'package:flutter_tts/flutter_tts.dart';
 
 class Quiz extends StatefulWidget {
   @override
@@ -10,6 +11,7 @@ class Quiz extends StatefulWidget {
 }
 
 class _QuizState extends State<Quiz> {
+  FlutterTts tts = FlutterTts();
   int totalQuestion = quiz.length + 1;
   int questionNumber = 0;
   Question question;
@@ -20,6 +22,10 @@ class _QuizState extends State<Quiz> {
 
   String getAnswer() {
     return quiz[questionNumber].answer;
+  }
+
+  speak(String text) async {
+    await tts.speak(text);
   }
 
   void nextQuestion(BuildContext context) {
@@ -43,6 +49,7 @@ class _QuizState extends State<Quiz> {
             color: Colors.green,
           ),
         );
+        speak("Correct");
       } else {
         score.add(
           Icon(
@@ -50,6 +57,8 @@ class _QuizState extends State<Quiz> {
             color: Colors.red,
           ),
         );
+
+        speak("Close, correct answer is $correctAnswer");
       }
 
       nextQuestion(context);
@@ -88,7 +97,7 @@ class _QuizState extends State<Quiz> {
                                 style: TextStyle(
                                     fontWeight: FontWeight.bold, fontSize: 30)),
                             TextSpan(
-                                text: "/$totalQuestion",
+                                text: "/${totalQuestion - 1}",
                                 style: TextStyle(fontSize: 18))
                           ],
                         ),

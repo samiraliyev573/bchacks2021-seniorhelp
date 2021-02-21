@@ -42,9 +42,11 @@ class _HomePageState extends State<HomePage>
       ),
       btnOkText: "Call",
       btnCancelOnPress: () {
+        Navigator.pop(context);
+      },
+      btnOkOnPress: () {
         launch("tel://+12504445555");
       },
-      btnOkOnPress: () {},
     )..show();
   }
 

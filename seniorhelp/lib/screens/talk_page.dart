@@ -3,6 +3,7 @@ import 'package:bubble/bubble.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_dialogflow/dialogflow_v2.dart';
 import 'package:speech_to_text/speech_to_text.dart' as stt;
+import 'package:flutter_tts/flutter_tts.dart';
 
 class TalkPage extends StatefulWidget {
   @override
@@ -13,7 +14,7 @@ class _TalkPageState extends State<TalkPage> {
   stt.SpeechToText _speech;
   bool voiceListen = false;
   String voiceText = 'Press the button and start speaking';
-
+  FlutterTts tts = FlutterTts();
   List<Map> messageList = List();
 
   @override
@@ -35,6 +36,7 @@ class _TalkPageState extends State<TalkPage> {
         "message": response.getListMessage()[0]["text"]["text"][0].toString()
       });
     });
+    await tts.speak(response.getListMessage()[0]["text"]["text"][0].toString());
   }
 
   @override
@@ -49,23 +51,7 @@ class _TalkPageState extends State<TalkPage> {
       floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
       bottomSheet: Padding(padding: EdgeInsets.only(bottom: 30.0)),
       floatingActionButton: AvatarGlow(
-//           animate: voiceListen,
-//           glowColor: Theme.of(context).primaryColor,
-//           endRadius: 35.0,
-//           duration: Duration(milliseconds: 2000),
-//           repeatPauseDuration: Duration(milliseconds: 100),
-//           repeat: true,
-//           child: Material(
-//             elevation: 10.0,
-//             shape: CircleBorder(),
-//             child: CircleAvatar(
-//               child: Icon(
-//                 voiceListen ? Icons.mic : Icons.mic_none,
-//                 size: 50,
-//               ),
-//               radius: 110.0,
-//             ),
-         animate: voiceListen,
+        animate: voiceListen,
         glowColor: Theme.of(context).primaryColor,
         endRadius: 45.0,
         duration: Duration(milliseconds: 2000),
