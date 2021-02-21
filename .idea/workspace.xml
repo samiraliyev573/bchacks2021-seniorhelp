@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e2c50a7f-e76c-4030-afbe-046ebc9565f9" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seniorhelp/lib/screens/home_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/seniorhelp/lib/screens/home_page.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seniorhelp/lib/screens/talk_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/seniorhelp/lib/screens/talk_page.dart" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1oldS5UjsjxhNyu3iw3V07oKttx" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="io.flutter.reload.alreadyRun" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="SDK Location" />
+    <property name="project.structure.proportion" value="0.17" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/seniorhelp/ios/Runner" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="FlutterRunConfigurationType" factoryName="Flutter">
+      <option name="filePath" value="main.dart" />
+      <method v="2" />
+    </configuration>
+    <configuration name="main.dart" type="FlutterRunConfigurationType" factoryName="Flutter" nameIsGenerated="true">
+      <option name="filePath" value="$PROJECT_DIR$/seniorhelp/lib/main.dart" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e2c50a7f-e76c-4030-afbe-046ebc9565f9" name="Default Changelist" comment="" />
+      <created>1613865107638</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1613865107638</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="278" y="78" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1613865825576">
+      <screen x="0" y="23" width="1440" height="788" />
+    </state>
+    <state x="278" y="78" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.788@0.23.1440.788" timestamp="1613865825576" />
+    <state x="551" y="213" key="#com.intellij.ide.util.TreeFileChooserDialog" timestamp="1613865824267">
+      <screen x="0" y="23" width="1440" height="788" />
+    </state>
+    <state x="551" y="213" key="#com.intellij.ide.util.TreeFileChooserDialog/0.23.1440.788@0.23.1440.788" timestamp="1613865824267" />
+    <state width="980" height="185" key="GridCell.Tab.0.bottom" timestamp="1613872234694">
+      <screen x="0" y="23" width="1440" height="792" />
+    </state>
+    <state width="980" height="201" key="GridCell.Tab.0.bottom/0.23.1440.788@0.23.1440.788" timestamp="1613865885573" />
+    <state width="980" height="185" key="GridCell.Tab.0.bottom/0.23.1440.792@0.23.1440.792" timestamp="1613872234694" />
+    <state width="980" height="144" key="GridCell.Tab.0.bottom/0.23.1440.795@0.23.1440.795" timestamp="1613871210492" />
+    <state width="980" height="185" key="GridCell.Tab.0.center" timestamp="1613872234686">
+      <screen x="0" y="23" width="1440" height="792" />
+    </state>
+    <state width="980" height="201" key="GridCell.Tab.0.center/0.23.1440.788@0.23.1440.788" timestamp="1613865885572" />
+    <state width="980" height="185" key="GridCell.Tab.0.center/0.23.1440.792@0.23.1440.792" timestamp="1613872234686" />
+    <state width="980" height="144" key="GridCell.Tab.0.center/0.23.1440.795@0.23.1440.795" timestamp="1613871210458" />
+    <state width="980" height="185" key="GridCell.Tab.0.left" timestamp="1613872234680">
+      <screen x="0" y="23" width="1440" height="792" />
+    </state>
+    <state width="980" height="201" key="GridCell.Tab.0.left/0.23.1440.788@0.23.1440.788" timestamp="1613865885571" />
+    <state width="980" height="185" key="GridCell.Tab.0.left/0.23.1440.792@0.23.1440.792" timestamp="1613872234680" />
+    <state width="980" height="144" key="GridCell.Tab.0.left/0.23.1440.795@0.23.1440.795" timestamp="1613871210456" />
+    <state width="980" height="185" key="GridCell.Tab.0.right" timestamp="1613872234693">
+      <screen x="0" y="23" width="1440" height="792" />
+    </state>
+    <state width="980" height="201" key="GridCell.Tab.0.right/0.23.1440.788@0.23.1440.788" timestamp="1613865885573" />
+    <state width="980" height="185" key="GridCell.Tab.0.right/0.23.1440.792@0.23.1440.792" timestamp="1613872234693" />
+    <state width="980" height="144" key="GridCell.Tab.0.right/0.23.1440.795@0.23.1440.795" timestamp="1613871210477" />
+  </component>
+</project>
