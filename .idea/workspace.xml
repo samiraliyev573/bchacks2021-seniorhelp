@@ -5,14 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e2c50a7f-e76c-4030-afbe-046ebc9565f9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/seniorhelp/ios/Podfile" beforeDir="false" afterPath="$PROJECT_DIR$/seniorhelp/ios/Podfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/seniorhelp/ios/Podfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/seniorhelp/ios/Podfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/seniorhelp/ios/Runner.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/seniorhelp/ios/Runner.xcodeproj/project.pbxproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/seniorhelp/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/seniorhelp/lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/seniorhelp/lib/screens/home_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/seniorhelp/lib/screens/home_page.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/seniorhelp/lib/screens/talk_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/seniorhelp/lib/screens/talk_page.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/seniorhelp/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/seniorhelp/pubspec.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/seniorhelp/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/seniorhelp/pubspec.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

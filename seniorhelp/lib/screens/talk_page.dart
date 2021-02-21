@@ -49,25 +49,23 @@ class _TalkPageState extends State<TalkPage> {
       floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
       bottomSheet: Padding(padding: EdgeInsets.only(bottom: 30.0)),
       floatingActionButton: AvatarGlow(
-<<<<<<< HEAD
-          animate: voiceListen,
-          glowColor: Theme.of(context).primaryColor,
-          endRadius: 35.0,
-          duration: Duration(milliseconds: 2000),
-          repeatPauseDuration: Duration(milliseconds: 100),
-          repeat: true,
-          child: Material(
-            elevation: 10.0,
-            shape: CircleBorder(),
-            child: CircleAvatar(
-              child: Icon(
-                voiceListen ? Icons.mic : Icons.mic_none,
-                size: 50,
-              ),
-              radius: 110.0,
-            ),
-=======
-        animate: voiceListen,
+//           animate: voiceListen,
+//           glowColor: Theme.of(context).primaryColor,
+//           endRadius: 35.0,
+//           duration: Duration(milliseconds: 2000),
+//           repeatPauseDuration: Duration(milliseconds: 100),
+//           repeat: true,
+//           child: Material(
+//             elevation: 10.0,
+//             shape: CircleBorder(),
+//             child: CircleAvatar(
+//               child: Icon(
+//                 voiceListen ? Icons.mic : Icons.mic_none,
+//                 size: 50,
+//               ),
+//               radius: 110.0,
+//             ),
+         animate: voiceListen,
         glowColor: Theme.of(context).primaryColor,
         endRadius: 45.0,
         duration: Duration(milliseconds: 2000),
@@ -78,7 +76,6 @@ class _TalkPageState extends State<TalkPage> {
           child: Icon(
             voiceListen ? Icons.mic : Icons.mic_none,
             size: 40,
->>>>>>> 684359d92f1b229ef04a0f0b0388c8bbceecdcf4
           ),
         ),
       ),
