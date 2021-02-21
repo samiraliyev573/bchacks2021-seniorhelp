@@ -106,9 +106,7 @@ class _HomePageState extends State<HomePage>
               SizedBox(width: 10),
               GestureDetector(
                 onTap: () {
-                  Navigator.push(context, MaterialPageRoute(builder: (context) {
-                    return Quiz();
-                  }));
+                  Navigator.pushNamed(context, '/quiz');
                 },
                 child: Container(
                   margin: EdgeInsets.all(20),

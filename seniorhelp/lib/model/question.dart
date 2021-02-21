@@ -1,69 +1,104 @@
 class Question {
   String question;
-  List<String> options;
+  List<Option> options;
   String answer;
   Question({this.question, this.options, this.answer});
+}
+
+class Option {
+  final String text;
+  Option(this.text);
 }
 
 final quiz = [
   Question(
     question: "What are your children’s names?",
     options: [
-      "Jack and Jill Doe",
-      "Jayden and Jane Doe",
-      "James and Jen Doe) ",
-      "Joe and June Doe"
+      Option("Jack and Jill Doe"),
+      Option("Jayden and Jane Doe"),
+      Option("James and Jen Doe"),
+      Option("Joe and June Doe"),
     ],
     answer: "Jack and Jill Doe",
   ),
   Question(
     question: "How old are your children?",
-    options: ["39 and 36", "45 and 40", "34 and 39", "44 and 55"],
+    options: [
+      Option("39 and 36"),
+      Option("45 and 40"),
+      Option("34 and 39"),
+      Option("44 and 55")
+    ],
     answer: "39 and 36",
   ),
   Question(
     question: "What was your nickname growing up?",
-    options: ["Bolt Doe", "Dashing Doe", "Red Hot Doe", "Speedy Doe"],
+    options: [
+      Option("Bolt Doe"),
+      Option("Dashing Doe"),
+      Option("Red Hot Doe"),
+      Option("Speedy Doe")
+    ],
     answer: "Dashing Doe",
   ),
   Question(
     question: "What was your favorite time of year growing up? Why?",
-    options: ["Late Summer", "Rainy Fall", "Tropic Spring", "Snowy Winters"],
+    options: [
+      Option("Late Summer"),
+      Option("Rainy Fall"),
+      Option("Tropic Spring"),
+      Option("Snowy Winters")
+    ],
     answer: "Tropic Spring",
   ),
   Question(
     question: "Did you play sports as a kid? Which ones?",
-    options: ["Soccer", "Swimming", "Chess", "Bodybuilding"],
+    options: [
+      Option("Soccer"),
+      Option("Swimming"),
+      Option("Chess"),
+      Option("Bodybuilding")
+    ],
     answer: "Bodybuilding",
   ),
   Question(
     question:
         "What was the most historic event you witnessed as a young person?",
     options: [
-      "Moon Landing",
-      "Black Hole image",
-      "DNA modifications",
-      "Launch of google"
+      Option("Moon Landing"),
+      Option("Black Hole image"),
+      Option("DNA modifications"),
+      Option("Launch of google")
     ],
     answer: "Moon Landing",
   ),
   Question(
     question:
         "What is your favorite cuisine and how has it changed over the years?",
-    options: ["Chinese", "Indian", "Thai", "Soul Food"],
+    options: [
+      Option("Chinese"),
+      Option("Indian"),
+      Option("Thai"),
+      Option("Soul Food")
+    ],
     answer: "Indian",
   ),
   Question(
       question: "Which childhood possession do you still own?",
       options: [
-        "Watch from 1956",
-        "Classic Vinyl Records",
-        "Baseball Trading Cards",
-        "Graduation Robes"
+        Option("Watch from 1956"),
+        Option("Classic Vinyl Records"),
+        Option("Baseball Trading Cards"),
+        Option("Graduation Robes")
       ],
       answer: "Graduation Robes"),
   Question(
       question: "What was the first vehicle you owned? ",
-      options: ["Dodge Charger", "Audi S class", "Rolls Royce", "Range Rover"],
+      options: [
+        Option("Dodge Charger"),
+        Option("Audi S class"),
+        Option("Rolls Royce"),
+        Option("Range Rover")
+      ],
       answer: "Dodge Charger")
 ];
