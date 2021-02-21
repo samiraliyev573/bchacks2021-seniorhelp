@@ -41,10 +41,14 @@ dependencies:
   speech_to_text: ^3.1.0
   highlight_text: ^0.7.2
   avatar_glow: ^1.2.0
+<<<<<<< Updated upstream
   flutter_tts: ^2.1.0
   echoar_package: "^0.0.1+2"
   flutter_3d_obj: ^0.0.6
 
+=======
+  firebase_messaging: ^7.0.3
+>>>>>>> Stashed changes
 
 dev_dependencies:
   flutter_test:
