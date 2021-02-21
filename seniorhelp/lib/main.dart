@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:seniorhelp/screens/animal.dart';
 import 'screens/home_page.dart';
 import 'screens/quiz.dart';
 import 'screens/talk_page.dart';
@@ -23,6 +24,7 @@ class MyApp extends StatelessWidget {
           '/': (context) => HomePage(),
           '/talk': (context) => TalkPage(),
           '/quiz': (context) => Quiz(),
+          '/animal': (context) => Animal(),
         });
   }
 }

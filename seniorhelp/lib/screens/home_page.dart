@@ -41,9 +41,7 @@ class _HomePageState extends State<HomePage>
         )),
       ),
       btnOkText: "Call",
-      btnCancelOnPress: () {
-        Navigator.pop(context);
-      },
+      btnCancelOnPress: () {},
       btnOkOnPress: () {
         launch("tel://+12504445555");
       },
@@ -213,22 +211,25 @@ class _HomePageState extends State<HomePage>
                 ),
               ),
               SizedBox(width: 10),
-              Container(
-                margin: EdgeInsets.all(20),
-                height: _mediaWidth * 0.20,
-                width: _mediaWidth * 0.35,
-                child: Center(
-                  child: Text(
-                    "Animals",
-                    style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                        fontSize: 20,
-                        color: Colors.white),
+              GestureDetector(
+                onTap: () => Navigator.pushNamed(context, '/animal'),
+                child: Container(
+                  margin: EdgeInsets.all(20),
+                  height: _mediaWidth * 0.20,
+                  width: _mediaWidth * 0.35,
+                  child: Center(
+                    child: Text(
+                      "Animals",
+                      style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 20,
+                          color: Colors.white),
+                    ),
                   ),
-                ),
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.all(Radius.circular(20)),
-                  color: Colors.green,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.all(Radius.circular(20)),
+                    color: Colors.green,
+                  ),
                 ),
               ),
             ],
