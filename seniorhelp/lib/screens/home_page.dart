@@ -80,19 +80,11 @@ class _HomePageState extends State<HomePage>
       backgroundColor: Color(0xffdedddd),
       appBar: AppBar(
         backgroundColor: Color(0Xff48758d),
-        title: Text('Senior Help'),
+        title: Text('Senior Buddy'),
         centerTitle: true,
       ),
       body: Column(
         children: [
-          SizedBox(height: 20),
-          Text(
-            "To Do:",
-            style: TextStyle(
-              fontSize: 35,
-              color: Colors.white,
-            ),
-          ),
           todolist != null
               ? Expanded(
                   child: ListView.builder(
@@ -106,10 +98,14 @@ class _HomePageState extends State<HomePage>
                         return Dismissible(
                           key: Key(todolist[index].id),
                           child: Card(
+                            elevation: 5,
                             shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(10)),
                             child: ListTile(
-                              title: Text(todoName),
+                              title: Text(todoName,
+                                  style: TextStyle(
+                                    fontSize: 21,
+                                  )),
                               subtitle: Text(todoDate),
                               trailing: IconButton(
                                 onPressed: () {
