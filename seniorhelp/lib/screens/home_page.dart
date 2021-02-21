@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'dart:async';
 
+import 'package:seniorhelp/screens/quiz.dart';
+
 class HomePage extends StatefulWidget {
   @override
   _HomePageState createState() => _HomePageState();
@@ -102,22 +104,29 @@ class _HomePageState extends State<HomePage>
           Row(
             children: [
               SizedBox(width: 10),
-              Container(
-                margin: EdgeInsets.all(20),
-                height: _mediaWidth * 0.20,
-                width: _mediaWidth * 0.35,
-                child: Center(
-                  child: Text(
-                    "Quiz",
-                    style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                        fontSize: 20,
-                        color: Colors.white),
+              GestureDetector(
+                onTap: () {
+                  Navigator.push(context, MaterialPageRoute(builder: (context) {
+                    return Quiz();
+                  }));
+                },
+                child: Container(
+                  margin: EdgeInsets.all(20),
+                  height: _mediaWidth * 0.20,
+                  width: _mediaWidth * 0.35,
+                  child: Center(
+                    child: Text(
+                      "Quiz",
+                      style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 20,
+                          color: Colors.white),
+                    ),
                   ),
-                ),
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.all(Radius.circular(20)),
-                  color: Colors.deepPurpleAccent,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.all(Radius.circular(20)),
+                    color: Colors.deepPurpleAccent,
+                  ),
                 ),
               ),
               SizedBox(width: 10),
