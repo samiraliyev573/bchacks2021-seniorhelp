@@ -48,7 +48,7 @@ class _TalkPageState extends State<TalkPage> {
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
       bottomSheet: Padding(padding: EdgeInsets.only(bottom: 30.0)),
-      floatingActionButton:AvatarGlow(
+      floatingActionButton: AvatarGlow(
           animate: voiceListen,
           glowColor: Theme.of(context).primaryColor,
           endRadius: 35.0,
